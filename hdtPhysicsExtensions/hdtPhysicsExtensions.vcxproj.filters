@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="skse">
+      <UniqueIdentifier>{62533a8e-1316-4da2-ad46-1d2bef983878}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inisetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="havok_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameData.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameForms.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameRTTI.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameAPI.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameTypes.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\PapyrusArgs.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\PapyrusVM.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiRTTI.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiObjects.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="netimmerse_helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameStreams.cpp">
+      <Filter>skse</Filter>
+    </ClCompile>
+    <ClCompile Include="HookWeapon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookArmor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\SafeWrite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookHair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exception.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviorHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inisetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ppapi_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="havok_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="netimmerse_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookWeapon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookArmor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookHair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviorHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
