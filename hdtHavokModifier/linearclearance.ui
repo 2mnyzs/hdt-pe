@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LinearClearance</class>
+ <widget class="QWidget" name="LinearClearance">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>307</width>
+    <height>198</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Type:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Prismatic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hinge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ball Socket</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Pivot A:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="Vec3Setter" name="widgetPivotA" native="true"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Pivot B:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="Vec3Setter" name="widgetPivotB" native="true"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Basis A:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="RotationSetter" name="widgetBasisA" native="true"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Basis B:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="RotationSetter" name="widgetBasisB" native="true"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Min Limits:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="Vec3Setter" name="widgetMin" native="true"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Max Limits:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="Vec3Setter" name="widgetMax" native="true"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Max Friction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QDoubleSpinBox" name="spinBoxFriction">
+     <property name="decimals">
+      <number>6</number>
+     </property>
+     <property name="maximum">
+      <double>9999.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Motor:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="MotorSelector" name="widgetMotor" native="true"/>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Motor Target:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QDoubleSpinBox" name="spinBoxMotorTarget">
+     <property name="decimals">
+      <number>6</number>
+     </property>
+     <property name="minimum">
+      <double>-9999.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>9999.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RotationSetter</class>
+   <extends>QWidget</extends>
+   <header>rotationsetter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Vec3Setter</class>
+   <extends>QWidget</extends>
+   <header>vec3setter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MotorSelector</class>
+   <extends>QWidget</extends>
+   <header>motorselector.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

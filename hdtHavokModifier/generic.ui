@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Generic</class>
+ <widget class="QWidget" name="Generic">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>276</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Joint</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Pivot A:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="Vec3Setter" name="pivotA" native="true">
+         <property name="toolTip">
+          <string>Sets the pivot point attached to body A from a point in A's body space.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Pivot B:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="Vec3Setter" name="pivotB" native="true">
+         <property name="toolTip">
+          <string>Sets the pivot point attached to body B from a point in B's body space.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Linear Limits</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Linear Basis B:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="RotationSetter" name="linearBasisB" native="true"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Linear Min Limits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="Vec3Setter" name="linearMin" native="true"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Linear Max Limits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="Vec3Setter" name="linearMax" native="true"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Linear Motor X:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="MotorSelector" name="linearMotorX" native="true"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Linear Motor Y:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="MotorSelector" name="linearMotorY" native="true"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Linear Motor Z:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="MotorSelector" name="linearMotorZ" native="true"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Friction:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="Vec3Setter" name="linearFriction" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Angular Limits</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Angular Basis A:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="RotationSetter" name="angularBasisA" native="true"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Angular Basis B:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="RotationSetter" name="angularBasisB" native="true"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Angular Min Limits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="Vec3Setter" name="angularMin" native="true"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Angular Max Limits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Vec3Setter" name="angularMax" native="true"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Angular Motor X:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="MotorSelector" name="angularMotorX" native="true"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Angular Motor Y:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="MotorSelector" name="angularMotorY" native="true"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Angular Motor Z:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="MotorSelector" name="angularMotorZ" native="true"/>
+       </item>
+       <item row="5" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="radius">
+           <property name="text">
+            <string>Radius</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="degree">
+           <property name="text">
+            <string>Degree</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Friction</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="Vec3Setter" name="angularFriction" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RotationSetter</class>
+   <extends>QWidget</extends>
+   <header>rotationsetter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Vec3Setter</class>
+   <extends>QWidget</extends>
+   <header>vec3setter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MotorSelector</class>
+   <extends>QWidget</extends>
+   <header>motorselector.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

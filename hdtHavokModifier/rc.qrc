@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>backgrounds/yande.re 64923.jpg</file>
+        <file>backgrounds/yande 271324.jpg</file>
+        <file>icons/arrowdown.png</file>
+        <file>icons/arrowup.png</file>
+        <file>backgrounds/yande.re 134377.jpg</file>
+        <file>backgrounds/yande.re 268248.jpg</file>
+        <file>backgrounds/yande.re 271499.jpg</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>style.qss</file>
+    </qresource>
+</RCC>

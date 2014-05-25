@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogRigidBody</class>
+ <widget class="QDialog" name="DialogRigidBody">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background: transparent;
+}
+
+QLabel{
+	color: rgb(0,0,127);
+}
+
+QGroupBox{
+	color: white;
+	border: 1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+	margin-top: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+	background-color: rgba(255, 255, 255, 160);
+	border-color:white;
+	color: rgb(0,0,127);
+}
+
+QLineEdit{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 128);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QLineEdit::hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox,QDoubleSpinBox {
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QSpinBox:hover,QDoubleSpinBox:hover {
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox::up-button,QDoubleSpinBox::up-button,
+QSpinBox::down-button,QDoubleSpinBox::down-button {
+	border-left: 1px solid white;
+	background-color: transparent;
+}
+
+QSpinBox::up-button:hover,
+QDoubleSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover
+{
+	border-left: 1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QSpinBox::up-arrow,QDoubleSpinBox::up-arrow{
+	image: url(:/icons/arrowup.png);
+	width: 5px;
+}
+
+QSpinBox::down-arrow,QDoubleSpinBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 5px;
+}
+
+QPushButton{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 4 20 4 20px;
+}
+
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255, 224);
+}
+
+QComboBox{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QComboBox:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox:on{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox::drop-down{
+	border-left:1px solid white;
+}
+
+QComboBox::drop-down::hover{
+	border-left:1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QComboBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 7px;
+}
+
+QComboBoxListView{
+	background-color: white;
+}
+
+QDialog{
+	background-image: url(:/backgrounds/yande 271324.jpg);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupGeneric">
+     <property name="title">
+      <string>Generic Properties</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditName">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>MotionType</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboMotionType"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Friction</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxFriction">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Restitution</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxRestitution">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupAdvance">
+     <property name="title">
+      <string>Advanced Properties</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Linear Damping</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxLinearDamping">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Angular Damping</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxAngularDamping">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Gravity Factor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxGravityFactor">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Time Factor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="spinBoxTimeFactor">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupMassProperties">
+     <property name="title">
+      <string>MassProperties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="MassPropertySetter" name="widgetMassProperties" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="collisionFilterGroup">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Collisions</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0" colspan="2">
+       <widget class="CollisionFilterSetter" name="collisionFilterSetter" native="true">
+        <zorder>label_9</zorder>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Shape:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ShapeSelector" name="widgetShape" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CollisionFilterSetter</class>
+   <extends>QWidget</extends>
+   <header>collisionfiltersetter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MassPropertySetter</class>
+   <extends>QWidget</extends>
+   <header>masspropertysetter.h</header>
+   <container>1</container>
+   <slots>
+    <signal>buttonAutoFill(float)</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>ShapeSelector</class>
+   <extends>QWidget</extends>
+   <header>shapeselector.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogRigidBody</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogRigidBody</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

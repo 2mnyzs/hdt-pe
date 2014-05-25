@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogShapeSetter</class>
+ <widget class="QDialog" name="DialogShapeSetter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>319</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background: transparent;
+}
+
+QDialog{
+	background-image: url(:/backgrounds/yande.re 134377.jpg);
+}
+
+QLabel{
+	color: white;
+}
+
+QGroupBox{
+	color: white;
+	border: 1px solid white;
+	margin-top: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+	background-color: rgba(255, 255, 255, 160);
+	border-color:white;
+	color: rgb(0,0,127);
+}
+
+QLineEdit{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 128);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QLineEdit::hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox,QDoubleSpinBox {
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QSpinBox:hover,QDoubleSpinBox:hover {
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox::up-button,QDoubleSpinBox::up-button,
+QSpinBox::down-button,QDoubleSpinBox::down-button {
+	border-left: 1px solid white;
+	background-color: transparent;
+}
+
+QSpinBox::up-button:hover,
+QDoubleSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover
+{
+	border-left: 1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QSpinBox::up-arrow,QDoubleSpinBox::up-arrow{
+	image: url(:/icons/arrowup.png);
+	width: 5px;
+}
+
+QSpinBox::down-arrow,QDoubleSpinBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 5px;
+}
+
+QPushButton{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 4 20 4 20px;
+}
+
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255, 224);
+}
+
+QComboBox{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QComboBox:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox:on{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox::drop-down{
+	border-left:1px solid white;
+}
+
+QComboBox::drop-down::hover{
+	border-left:1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QComboBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 7px;
+}
+
+QListWidget{
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QComboBox QAbstractItemView{
+	background-color: white;
+}
+
+QMenu{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+	selection-background-color: rgba(255, 255, 255, 192);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QComboBox" name="comboBox"/>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="layoutShape"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogShapeSetter</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogShapeSetter</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

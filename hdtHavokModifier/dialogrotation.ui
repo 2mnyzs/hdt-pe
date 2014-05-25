@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogRotation</class>
+ <widget class="QDialog" name="DialogRotation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>182</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	color: rgb(0,0,127);
+	background:transparent;
+}
+
+QDialog{
+	background-image: url(:/backgrounds/yande.re 271499.jpg);
+}
+
+QTabWidget{
+	border: 1px solid white;
+}
+
+QTabWidget::pane{
+	border: 1px solid white;
+	padding: 0 0 0 0px;
+}
+
+QTabWidget#tabWidget::pane{
+	background-color: rgba(255,255,255,127);
+	border: 1px solid white;
+	padding: 0 0 0 0px;
+}
+
+QTabBar::tab {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 64), stop:1 rgba(255, 255, 255, 127));
+}
+
+QTabBar::tab:selected {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 64), stop:1 rgba(255, 255, 255, 255));
+}
+
+QTabBar::tab:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 64), stop:1 rgba(255, 255, 255, 255));
+}
+
+QGroupBox{
+	border: 1px solid white;
+	margin-top: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+	background-color: rgba(255, 255, 255, 160);
+	border-color:white;
+	color: rgb(0,0,127);
+}
+
+QLineEdit{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QLineEdit::hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox,QDoubleSpinBox {
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QSpinBox:hover,QDoubleSpinBox:hover {
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QSpinBox::up-button,QDoubleSpinBox::up-button,
+QSpinBox::down-button,QDoubleSpinBox::down-button {
+	border-left: 1px solid white;
+	background-color: transparent;
+}
+
+QSpinBox::up-button:hover,
+QDoubleSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover
+{
+	border-left: 1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QSpinBox::up-arrow,QDoubleSpinBox::up-arrow{
+	image: url(:/icons/arrowup.png);
+	width: 5px;
+}
+
+QSpinBox::down-arrow,QDoubleSpinBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 5px;
+}
+
+QPushButton{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 4 20 4 20px;
+}
+
+QToolButton{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+QToolButton::menu-button{
+	border-left: 1px solid white;
+}
+
+QToolButton::menu-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 3;
+}
+
+QPushButton:hover, QToolButton:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QPushButton:pressed, QToolButton:pressed{
+	background-color: rgba(255, 255, 255, 224);
+}
+
+QComboBox{
+	color: rgb(0,0,127);
+	background-color: rgba(255, 255, 255, 127);
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+QComboBox:hover{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox:on{
+	background-color: rgba(255, 255, 255, 192);
+}
+
+QComboBox::drop-down{
+	border-left:1px solid white;
+}
+
+QComboBox::drop-down::hover{
+	border-left:1px solid white;
+	background-color: rgba(255, 255, 255, 127);
+}
+
+QComboBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 7px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/icons/arrowdown.png);
+	width: 7px;
+}
+
+QComboBoxListView{
+	background-color: white;
+}
+
+QListWidget{
+	border:1px solid white;
+	border-radius:2px;
+}
+
+QMenu{
+	color: rgb(0,0,127);
+	background-color:white;
+	border: 1px solid white;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabEular">
+      <attribute name="title">
+       <string>Eular</string>
+      </attribute>
+      <attribute name="toolTip">
+       <string>Roll first, then pitch, finally yaw.</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="radioEularRadius">
+            <property name="text">
+             <string>Radius</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioEularDegree">
+            <property name="text">
+             <string>Degree</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QFrame" name="frame_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QFormLayout" name="formLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Roll(Z):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QDoubleSpinBox" name="spinBoxR">
+            <property name="decimals">
+             <number>8</number>
+            </property>
+            <property name="minimum">
+             <double>-360.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>360.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Pitch(Y):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDoubleSpinBox" name="spinBoxP">
+            <property name="decimals">
+             <number>8</number>
+            </property>
+            <property name="minimum">
+             <double>-360.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>360.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Yaw(X):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QDoubleSpinBox" name="spinBoxY">
+            <property name="decimals">
+             <number>8</number>
+            </property>
+            <property name="minimum">
+             <double>-360.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>360.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAxisAngle">
+      <attribute name="title">
+       <string>Axis-Angle</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="gridFrame_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="radioAxisAngleRadius">
+            <property name="text">
+             <string>Radius</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioAxisAngleDegree">
+            <property name="text">
+             <string>Degree</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="formFrame_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QFormLayout" name="formLayout_4">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Axis:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Angle:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDoubleSpinBox" name="spinBoxAngle">
+            <property name="decimals">
+             <number>8</number>
+            </property>
+            <property name="minimum">
+             <double>-180.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>180.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="Vec3Setter" name="widgetAxis" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMatrix">
+      <attribute name="title">
+       <string>Matrix</string>
+      </attribute>
+      <attribute name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each column represent an axis after rotated in old space.&lt;/p&gt;&lt;p&gt;Column 1 : X axis.&lt;/p&gt;&lt;p&gt;Column 2 : Y axis.&lt;/p&gt;&lt;p&gt;Column 3 : Z axis.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" colspan="2">
+        <widget class="Matrix33Setter" name="widgetMatrix" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabQuaternion">
+      <attribute name="title">
+       <string>Quaternion</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0" colspan="2">
+        <widget class="Vec4Setter" name="widgetQuaternion" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Vec3Setter</class>
+   <extends>QWidget</extends>
+   <header>vec3setter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Matrix33Setter</class>
+   <extends>QWidget</extends>
+   <header>matrix33setter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Vec4Setter</class>
+   <extends>QWidget</extends>
+   <header>vec4setter.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogRotation</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogRotation</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
